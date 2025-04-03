@@ -26,13 +26,17 @@
   .social-icons {
     display: none;
   }
+  .hero {
+    height: 70vh;
+  }
   .hero h1 {
     font-size: 2rem; /* Adjust font size for mobile */
     margin-bottom: 15px;
+    letter-spacing: 2px;
   }
 
   .hero p {
-    font-size: 1rem; /* Adjust paragraph font size for mobile */
+    font-size: 1.5rem; /* Adjust paragraph font size for mobile */
     margin-bottom: 10px;
   }
 
