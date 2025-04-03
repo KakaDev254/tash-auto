@@ -30,8 +30,6 @@
     height: 80vh;
   }
   .hero h1 {
-    font-size: 2rem; /* Adjust font size for mobile */
-    margin-bottom: 15px;
     letter-spacing: 3px;
   }
 

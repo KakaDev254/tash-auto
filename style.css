@@ -121,8 +121,9 @@ body {
   z-index: 2;
 }
 .hero h1 {
-  font-size: 3rem;
+  font-size: 40px;
   font-weight: bold;
+
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
 .hero p {
