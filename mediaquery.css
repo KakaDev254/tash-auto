@@ -27,16 +27,16 @@
     display: none;
   }
   .hero {
-    height: 70vh;
+    height: 80vh;
   }
   .hero h1 {
     font-size: 2rem; /* Adjust font size for mobile */
     margin-bottom: 15px;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
   }
 
   .hero p {
-    font-size: 1.5rem; /* Adjust paragraph font size for mobile */
+    font-size: 1.2rem; /* Adjust paragraph font size for mobile */
     margin-bottom: 10px;
   }
 
