@@ -21,10 +21,24 @@
   }
 
   .contact-info {
-    justify-content: center;
+    display: none;
   }
   .social-icons {
     display: none;
+  }
+  .hero h1 {
+    font-size: 2rem; /* Adjust font size for mobile */
+    margin-bottom: 15px;
+  }
+
+  .hero p {
+    font-size: 1rem; /* Adjust paragraph font size for mobile */
+    margin-bottom: 10px;
+  }
+
+  .hero .cta-btn {
+    font-size: 1rem; /* Adjust button font size for mobile */
+    padding: 8px 16px;
   }
   .featured-inventory h2 {
     font-size: 1.8rem;
