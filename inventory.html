@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Inventory | Tash Auto Collections</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .car-card {
+        transition: transform 0.3s;
+      }
+      .car-card:hover {
+        transform: scale(1.05);
+      }
+      .car-img {
+        height: 200px;
+        object-fit: cover;
+      }
+      .btn-own {
+        background-color: #ffa725;
+        border: none;
+        color: white;
+      }
+      .btn-own:hover {
+        background-color: #e6951c;
+      }
+      .btn-details {
+        background-color: black;
+        color: white;
+      }
+      .btn-details:hover {
+        background-color: #333;
+        color: bisque;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="assets/tashlogo.PNG" alt="Tash Auto Logo" /> Tash Auto
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Inventory</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          </ul>
+          <a href="#" class="btn cta-btn ms-3">Get a Car</a>
+        </div>
+      </div>
+    </nav>
+    <div class="container mt-5">
+      <h2 class="text-center mb-4">Our Car Inventory</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card car-card shadow">
+            <img
+              src="assets/x5.jpeg"
+              loading="lazy"
+              class="card-img-top car-img"
+              alt="Car 1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">2022 BMW X5</h5>
+              <p class="card-text">AWD | Automatic | Petrol | 35,000 km</p>
+              <p class="fw-bold">$45,000</p>
+              <div class="d-flex gap-2">
+                <a href="#" class="btn btn-own">Own Now</a>
+                <a href="car-details.html" class="btn btn-details"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card car-card shadow">
+            <img
+              src="assets/q7.jpeg"
+              loading="lazy"
+              class="card-img-top car-img"
+              alt="Car 2"
+            />
+            <div class="card-body">
+              <h5 class="card-title">2021 Audi Q7</h5>
+              <p class="card-text">Quattro | Automatic | Diesel | 40,000 km</p>
+              <p class="fw-bold">$50,000</p>
+              <div class="d-flex gap-2">
+                <a href="#" class="btn btn-own">Own Now</a>
+                <a href="car-details.html" class="btn btn-details"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card car-card shadow">
+            <img
+              src="assets/gle.jpeg"
+              loading="lazy"
+              class="card-img-top car-img"
+              alt="Car 3"
+            />
+            <div class="card-body">
+              <h5 class="card-title">2023 Mercedes GLE</h5>
+              <p class="card-text">4MATIC | Automatic | Petrol | 25,000 km</p>
+              <p class="fw-bold">$60,000</p>
+              <div class="d-flex gap-2">
+                <a href="#" class="btn btn-own">Own Now</a>
+                <a href="car-details.html" class="btn btn-details"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card car-card shadow">
+            <img
+              src="assets/x5.jpeg"
+              loading="lazy"
+              class="card-img-top car-img"
+              alt="Car 1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">2022 BMW X5</h5>
+              <p class="card-text">AWD | Automatic | Petrol | 35,000 km</p>
+              <p class="fw-bold">$45,000</p>
+              <div class="d-flex gap-2">
+                <a href="#" class="btn btn-own">Own Now</a>
+                <a href="car-details.html" class="btn btn-details"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card car-card shadow">
+            <img
+              src="assets/q7.jpeg"
+              loading="lazy"
+              class="card-img-top car-img"
+              alt="Car 2"
+            />
+            <div class="card-body">
+              <h5 class="card-title">2021 Audi Q7</h5>
+              <p class="card-text">Quattro | Automatic | Diesel | 40,000 km</p>
+              <p class="fw-bold">$50,000</p>
+              <div class="d-flex gap-2">
+                <a href="#" class="btn btn-own">Own Now</a>
+                <a href="car-details.html" class="btn btn-details"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card car-card shadow">
+            <img
+              src="assets/gle.jpeg"
+              loading="lazy"
+              class="card-img-top car-img"
+              alt="Car 3"
+            />
+            <div class="card-body">
+              <h5 class="card-title">2023 Mercedes GLE</h5>
+              <p class="card-text">4MATIC | Automatic | Petrol | 25,000 km</p>
+              <p class="fw-bold">$60,000</p>
+              <div class="d-flex gap-2">
+                <a href="#" class="btn btn-own">Own Now</a>
+                <a href="car-details.html" class="btn btn-details"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
