@@ -1,6 +1,67 @@
 body {
   font-family: Arial, sans-serif;
 }
+/* Top Header */
+.top-header {
+  background: white;
+  color: #222;
+  padding: 10px 0;
+  border-bottom: 2px solid #ffa725;
+}
+
+/* Search Container */
+.search-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.search-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px 45px 10px 15px; /* Space for icon */
+  border: 2px solid #ffa725;
+  border-radius: 25px;
+  outline: none;
+  font-size: 16px;
+}
+
+/* Search Icon */
+.search-btn {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 22px;
+  color: #ffa725;
+  cursor: pointer;
+}
+
+/* Contact Info */
+.contact-info {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+}
+
+.contact-item i {
+  font-size: 20px;
+  color: #ffa725;
+}
+
 .navbar {
   background-color: black;
 }
@@ -118,51 +179,73 @@ body {
 .social-icon i {
   font-size: 20px;
 }
-/* Floating Call & WhatsApp Section */
-.floating-menu {
+/* Floating Contact Section */
+.floating-contact {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  right: 20px; /* Ensures it's on the right */
+  bottom: 20px; /* Ensures it's at the bottom */
   display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
-  gap: 10px;
+  flex-direction: column;
+  align-items: flex-end; /* Aligns icons to the right */
   z-index: 1000;
 }
 
-.fab-icon,
-.fab-btn {
-  width: 50px;
-  height: 50px;
+/* Message Toggle Button */
+.message-icon {
+  background-color: #ffa725;
+  color: white;
   border-radius: 50%;
-  background-color: #13521e;
+  width: 60px;
+  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
-  font-size: 24px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  font-size: 32px;
   cursor: pointer;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
-.fab-btn {
-  background-color: #f9e159; /* Pink for close button */
-}
-
-.fab-icon:hover,
-.fab-btn:hover {
+.message-icon:hover {
+  background-color: black;
   transform: scale(1.1);
 }
 
-.fab-icon {
-  opacity: 0;
-  visibility: hidden;
+/* Contact Icons (Initially Hidden) */
+.contact-icons {
+  display: none;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 10px;
 }
 
-.show .fab-icon {
-  opacity: 1;
-  visibility: visible;
+.contact-icon {
+  background-color: #025f24;
+  color: white;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.contact-icon:hover {
+  background-color: #1fa855;
+  transform: scale(1.1);
+}
+
+/* WhatsApp and Call Icon Colors */
+
+.contact-icon.whatsapp,
+.contact-icon.call {
+  background-color: #000;
+}
+
+.contact-icon i {
+  font-size: 26px;
 }
 
 .why-us h2 {
@@ -270,4 +353,184 @@ body {
   background-color: black;
   color: white;
   font-weight: bold;
+}
+/* Car Search Section */
+.car-search {
+  background: url("assets/dark.jpg") center/cover no-repeat;
+  padding: 100px 0;
+  color: white;
+  position: relative;
+}
+
+.car-search::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay for better contrast */
+}
+
+.car-search .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Left Side */
+.car-search h2 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.underline {
+  width: 60px;
+  height: 4px;
+  background-color: #ffa725;
+  margin-top: 10px;
+}
+
+/* Right Side Form */
+.search-form {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.search-form select,
+.search-form input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: #000;
+  border-radius: 5px;
+}
+
+.search-form select:focus,
+.search-form input:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.btn-search {
+  background: #000;
+  color: white;
+  padding: 12px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.btn-search:hover {
+  background: #f8f9fa;
+  color: #000;
+}
+#trends {
+  position: relative;
+  background-color: #f8f9fa;
+  color: #fff; /* White text color */
+}
+
+#trends .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6); /* White with low opacity */
+  z-index: 0;
+}
+
+#trends h2 {
+  font-size: 2rem;
+  color: #fff;
+  z-index: 2;
+  position: relative;
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column; /* Ensures cards are of equal height */
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+.card-img-top {
+  height: 200px; /* Fixed height for images */
+  object-fit: cover; /* Ensures images cover the area without distortion */
+}
+
+.card-title {
+  font-size: 1.25rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+.card-body {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body .btn {
+  margin-top: auto; /* Pushes the button to the bottom */
+}
+
+.btn-primary {
+  background-color: #ffa725;
+  border-color: #ffa725;
+}
+
+.btn-primary:hover {
+  background-color: #ff8c00;
+  border-color: #ff8c00;
+}
+
+@media (max-width: 768px) {
+  #trends h2 {
+    font-size: 1.75rem;
+  }
+}
+#footer {
+  background-color: black;
+}
+
+#footer h3 {
+  color: #fff;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.footer-logo {
+  width: 100px; /* Set a fixed width */
+  height: 100px; /* Set a fixed height */
+  object-fit: contain; /* Ensures logos maintain their aspect ratio */
+  transition: transform 0.3s ease;
+}
+
+.footer-logo:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+@media (max-width: 768px) {
+  .footer-logo {
+    width: 80px; /* Slightly smaller size for mobile screens */
+    height: 80px; /* Maintain aspect ratio */
+  }
 }

@@ -11,16 +11,18 @@ function fadeImages() {
 
 setInterval(fadeImages, 4000);
 
-function toggleMenu() {
-  let menu = document.querySelector(".floating-menu");
-  let toggleBtn = document.getElementById("toggleBtn").querySelector("i");
+document
+  .getElementById("message-toggle")
+  .addEventListener("click", function () {
+    var contactIcons = document.getElementById("contact-icons");
+    var messageToggle = document.getElementById("message-toggle");
 
-  menu.classList.toggle("show");
-
-  // Toggle between chat icon and close (X) icon
-  if (menu.classList.contains("show")) {
-    toggleBtn.classList.replace("bx-message-detail", "bx-x");
-  } else {
-    toggleBtn.classList.replace("bx-x", "bx-message-detail");
-  }
-}
+    // Toggle display of contact icons
+    if (contactIcons.style.display === "flex") {
+      contactIcons.style.display = "none";
+      messageToggle.innerHTML = '<i class="bx bx-message"></i>';
+    } else {
+      contactIcons.style.display = "flex";
+      messageToggle.innerHTML = '<i class="bx bx-x"></i>';
+    }
+  });

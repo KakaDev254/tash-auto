@@ -16,6 +16,36 @@
     <link rel="stylesheet" href="mediaquery.css" />
   </head>
   <body>
+    <header class="top-header">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Left: Search Bar -->
+          <div class="col-md-6 search-container">
+            <div class="search-wrapper">
+              <input
+                type="text"
+                class="search-input"
+                placeholder="Search for cars, brands, or models..."
+              />
+              <button class="search-btn"><i class="bx bx-search"></i></button>
+            </div>
+          </div>
+
+          <!-- Right: Contact Info -->
+          <div class="col-md-6 contact-info text-end">
+            <div class="contact-item">
+              <i class="bx bx-phone-call"></i>
+              <span>+254 712 345 678</span>
+            </div>
+            <div class="contact-item">
+              <i class="bx bx-map"></i>
+              <span>123 Auto Street, Nairobi, Kenya</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
     <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container">
         <a class="navbar-brand" href="#">
@@ -109,17 +139,18 @@
               </div>
             </div>
           </div>
-          <div class="floating-menu">
-            <div class="fab-btn" id="toggleBtn" onclick="toggleMenu()">
-              <i class="bx bx-message-detail"></i>
-              <!-- Default chat icon -->
+          <div class="floating-contact">
+            <div class="contact-icons" id="contact-icons">
+              <a href="tel:+1234567890" class="contact-icon call">
+                <i class="bx bx-phone"></i>
+              </a>
+              <a href="https://wa.me/" class="contact-icon whatsapp">
+                <i class="bx bxl-whatsapp"></i>
+              </a>
             </div>
-            <a href="https://wa.me/1234567890" target="_blank" class="fab-icon">
-              <i class="bx bxl-whatsapp"></i>
-            </a>
-            <a href="tel:+1234567890" class="fab-icon">
-              <i class="bx bx-phone"></i>
-            </a>
+            <div class="message-icon" id="message-toggle">
+              <i class="bx bx-message"></i>
+            </div>
           </div>
           <div class="col-md-4">
             <div class="card">
@@ -195,6 +226,225 @@
         <a href="#inventory" class="btn cta-btn mt-4">View All Inventory</a>
       </div>
     </section>
+    <section class="car-search">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Left Side - Title -->
+          <div class="col-md-6">
+            <h2>FIND YOUR DREAM CAR</h2>
+            <div class="underline"></div>
+          </div>
+
+          <!-- Right Side - Search Form -->
+          <div class="col-md-6">
+            <form class="search-form">
+              <select>
+                <option selected disabled>Year</option>
+                <option value="2025">2025</option>
+                <option value="2024">2024</option>
+                <option value="2023">2023</option>
+              </select>
+
+              <select>
+                <option selected disabled>Make</option>
+                <option value="BMW">BMW</option>
+                <option value="Mercedes">Mercedes</option>
+                <option value="Audi">Audi</option>
+              </select>
+
+              <select>
+                <option selected disabled>Model</option>
+                <option value="X5">X5</option>
+                <option value="C-Class">C-Class</option>
+                <option value="A4">A4</option>
+              </select>
+
+              <input type="number" placeholder="Max Price ($)" />
+
+              <button type="submit" class="btn btn-search">
+                SEARCH INVENTORY
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      id="trends"
+      class="py-5"
+      style="
+        background-image: url('assets/dark-wheel.jpg');
+        background-size: cover;
+        background-position: center;
+      "
+    >
+      <div class="overlay"></div>
+      <!-- Overlay for opacity -->
+      <div class="container">
+        <h2 class="text-center mb-4 text-white">Trends & News</h2>
+        <div class="row">
+          <!-- Blog Post 1 -->
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm border-0">
+              <img
+                src="assets/john-holden-zVOULkBBh6A-unsplash.jpg"
+                class="card-img-top"
+                alt="Trend 1"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Latest Car Trends of 2025</h5>
+                <p class="card-text">
+                  Discover the top car trends that are taking the auto world by
+                  storm in 2025...
+                </p>
+                <a href="#" class="btn btn-primary stretched-link mt-auto"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Blog Post 2 -->
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm border-0">
+              <img
+                src="assets/dark-wheel.jpg"
+                class="card-img-top"
+                alt="Trend 2"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">The Future of Electric Vehicles</h5>
+                <p class="card-text">
+                  How electric vehicles are evolving and the exciting
+                  innovations on the horizon...
+                </p>
+                <a href="#" class="btn btn-primary stretched-link mt-auto"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Blog Post 3 -->
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm border-0">
+              <img
+                src="assets/audi-black.jpg"
+                class="card-img-top"
+                alt="Trend 3"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">
+                  Top Car Accessories to Enhance Your Ride
+                </h5>
+                <p class="card-text">
+                  From tech upgrades to performance boosters, explore the best
+                  accessories for your car...
+                </p>
+                <a href="#" class="btn btn-primary stretched-link mt-auto"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="footer" class="bg-dark py-5">
+      <div class="container">
+        <h3 class="text-center text-white mb-4">Explore Car Makes</h3>
+        <div class="row justify-content-center">
+          <!-- Car Make 1 -->
+          <div class="col-4 col-sm-3 col-md-2 mb-4">
+            <a href="inventory/ford" class="d-block text-center">
+              <img src="assets/ford logo.jpeg" alt="Ford" class="footer-logo" />
+            </a>
+          </div>
+          <!-- Car Make 2 -->
+          <div class="col-4 col-sm-3 col-md-2 mb-4">
+            <a href="inventory/toyota" class="d-block text-center">
+              <img
+                src="assets/hyundai logo.jpg"
+                alt="Toyota"
+                class="footer-logo"
+              />
+            </a>
+          </div>
+          <!-- Car Make 3 -->
+          <div class="col-4 col-sm-3 col-md-2 mb-4">
+            <a href="inventory/bmw" class="d-block text-center">
+              <img src="assets/mazda logo.jpg" alt="BMW" class="footer-logo" />
+            </a>
+          </div>
+          <!-- Car Make 4 -->
+          <div class="col-4 col-sm-3 col-md-2 mb-4">
+            <a href="inventory/audi" class="d-block text-center">
+              <img
+                src="assets/Porsche-Logo.png"
+                alt="Audi"
+                class="footer-logo"
+              />
+            </a>
+          </div>
+          <div class="col-4 col-sm-3 col-md-2 mb-4">
+            <a href="inventory/audi" class="d-block text-center">
+              <img
+                src="assets/volvo logo.jpeg"
+                alt="Audi"
+                class="footer-logo"
+              />
+            </a>
+          </div>
+          <div class="col-4 col-sm-3 col-md-2 mb-4">
+            <a href="inventory/audi" class="d-block text-center">
+              <img
+                src="assets/hyundai logo.jpg"
+                alt="Audi"
+                class="footer-logo"
+              />
+            </a>
+          </div>
+          <div class="col-4 col-sm-3 col-md-2 mb-4">
+            <a href="inventory/audi" class="d-block text-center">
+              <img src="assets/isuzu-logo.jpg" alt="Audi" class="footer-logo" />
+            </a>
+          </div>
+          <div class="col-4 col-sm-3 col-md-2 mb-4">
+            <a href="inventory/audi" class="d-block text-center">
+              <img
+                src="assets/honda logo.jpeg"
+                alt="Audi"
+                class="footer-logo"
+              />
+            </a>
+          </div>
+          <div class="col-4 col-sm-3 col-md-2 mb-4">
+            <a href="inventory/audi" class="d-block text-center">
+              <img src="assets/volks.jpeg" alt="Audi" class="footer-logo" />
+            </a>
+          </div>
+          <div class="col-4 col-sm-3 col-md-2 mb-4">
+            <a href="inventory/audi" class="d-block text-center">
+              <img src="assets/jaguar.avif" alt="Audi" class="footer-logo" />
+            </a>
+          </div>
+          <div class="col-4 col-sm-3 col-md-2 mb-4">
+            <a href="inventory/audi" class="d-block text-center">
+              <img
+                src="assets/mitsubish logo.jpg"
+                alt="Audi"
+                class="footer-logo"
+              />
+            </a>
+          </div>
+          <div class="col-4 col-sm-3 col-md-2 mb-4">
+            <a href="inventory/audi" class="d-block text-center">
+              <img src="assets/toyota.png" alt="Audi" class="footer-logo" />
+            </a>
+          </div>
+          <!-- Add more car make logos here as needed -->
+        </div>
+      </div>
+    </footer>
+
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
