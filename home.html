@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tash Auto Collections</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaquery.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="assets/tashlogo.PNG" alt="Tash Auto Logo" /> Tash Auto
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Inventory</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          </ul>
+          <a href="#" class="btn cta-btn ms-3">Get a Car</a>
+        </div>
+      </div>
+    </nav>
+    <section class="hero">
+      <img src="assets/cx-red.jpg" class="active" alt="Luxury Car" />
+      <img src="assets/john-holden-zVOULkBBh6A-unsplash.jpg" alt="Sports Car" />
+      <img src="assets/audi-black.jpg" alt="SUV" />
+      <div class="hero-content">
+        <h1>Drive Your Dream Car Today!</h1>
+        <p>
+          Explore our premium selection of luxury, sports, and SUV vehicles.
+        </p>
+        <a href="#inventory" class="btn cta-btn">Browse Inventory</a>
+      </div>
+    </section>
+    <div class="social-icons">
+      <a href="https://wa.me/" class="social-icon whatsapp" target="_blank">
+        <i class="bx bxl-whatsapp"></i>
+      </a>
+      <a
+        href="https://www.facebook.com/"
+        class="social-icon facebook"
+        target="_blank"
+      >
+        <i class="bx bxl-facebook"></i>
+      </a>
+      <a
+        href="https://www.instagram.com/"
+        class="social-icon instagram"
+        target="_blank"
+      >
+        <i class="bx bxl-instagram"></i>
+      </a>
+      <a
+        href="https://www.tiktok.com/"
+        class="social-icon tiktok"
+        target="_blank"
+      >
+        <i class="bx bxl-tiktok"></i>
+      </a>
+    </div>
+    <section class="why-us">
+      <div class="container">
+        <h2>Why Tash Auto?</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="assets/audi7.jpg" alt="Top Quality Vehicles" />
+              <div class="card-body">
+                <h5 class="card-title">Top-Quality Vehicles</h5>
+                <p class="card-text">
+                  We offer only the best luxury, sports, and SUV cars with
+                  top-notch quality.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="assets/dark.jpg" alt="Affordable Pricing" />
+              <div class="card-body">
+                <h5 class="card-title">Affordable Pricing</h5>
+                <p class="card-text">
+                  Get premium cars at the best market prices with flexible
+                  payment options.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="floating-menu">
+            <div class="fab-btn" id="toggleBtn" onclick="toggleMenu()">
+              <i class="bx bx-message-detail"></i>
+              <!-- Default chat icon -->
+            </div>
+            <a href="https://wa.me/1234567890" target="_blank" class="fab-icon">
+              <i class="bx bxl-whatsapp"></i>
+            </a>
+            <a href="tel:+1234567890" class="fab-icon">
+              <i class="bx bx-phone"></i>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="assets/dark-wheel.jpg" alt="Exceptional Service" />
+              <div class="card-body">
+                <h5 class="card-title">Exceptional Service</h5>
+                <p class="card-text">
+                  Our team is dedicated to providing you with the best
+                  car-buying experience.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#inventory" class="btn cta-btn mt-4">Explore Our Collection</a>
+      </div>
+    </section>
+    <section class="featured-inventory">
+      <div class="container">
+        <h2>Featured Inventory</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="assets/2025-BMW-X3-M.avif" alt="Luxury Car" />
+              <div class="card-body">
+                <h5 class="card-title">
+                  2025 BMW X3 M: A High-Performing and Luxury SUV
+                </h5>
+                <p class="price">$000</p>
+                <p class="mileage">Mileage: 000 miles</p>
+                <div class="mt-auto">
+                  <a href="#" class="btn btn-own">Own Now</a>
+                  <a href="#" class="btn btn-details">Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="assets/MAZDA-6---Atenza-Sedan-6186_7 (1).jpg"
+                alt="Sports Car"
+              />
+              <div class="card-body">
+                <h5 class="card-title">MAZDA-6---Atenza-Sedan</h5>
+                <p class="price">$000</p>
+                <p class="mileage">Mileage: 000 miles</p>
+                <div class="mt-auto">
+                  <a href="#" class="btn btn-own">Own Now</a>
+                  <a href="#" class="btn btn-details">Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="assets/Porsche_Cayenne_(III,_Facelift)_–_f_01012025.jpg"
+                alt="SUV"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Porsche Cayenne- Ruf Dakara</h5>
+                <p class="price">$000</p>
+                <p class="mileage">Mileage: 000 miles</p>
+                <div class="mt-auto">
+                  <a href="#" class="btn btn-own">Own Now</a>
+                  <a href="#" class="btn btn-details">Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#inventory" class="btn cta-btn mt-4">View All Inventory</a>
+      </div>
+    </section>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

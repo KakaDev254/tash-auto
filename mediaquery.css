@@ -1,0 +1,38 @@
+@media (max-width: 992px) {
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+  .navbar-nav .nav-link {
+    font-size: 1rem;
+  }
+  .featured-inventory h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .featured-inventory h2 {
+    font-size: 1.8rem;
+  }
+  .featured-inventory .card img {
+    height: 200px;
+  }
+  .featured-inventory .price {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .featured-inventory h2 {
+    font-size: 1.5rem;
+  }
+  .featured-inventory .card img {
+    height: 180px;
+  }
+  .featured-inventory .price {
+    font-size: 1rem;
+  }
+  .featured-inventory .mileage {
+    font-size: 0.9rem;
+  }
+}
